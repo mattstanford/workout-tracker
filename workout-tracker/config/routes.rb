@@ -1,8 +1,9 @@
 WorkoutTracker::Application.routes.draw do
 
   resources :users
+  
   root :to => 'static_pages#home'
-  #match '/newUser', to: 'users#new', via: 'get'
+  match '/signup', to: 'users#new', via: 'get'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
