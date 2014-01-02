@@ -8,6 +8,11 @@ module SessionsHelper
    def signed_in?
     !self.current_user.nil?
   end
+  
+  def sign_out
+    self.current_user = nil
+    session.delete(:user)
+  end
 
   
   def current_user=(user)
