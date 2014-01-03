@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :name
-  #attr_accessor :email, :name
   validates :name, presence: true
+  has_many :runs
   
   #def initialize(attributes = {})
   #  @name = attributes[:name]
