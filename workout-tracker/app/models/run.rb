@@ -1,3 +1,3 @@
 class Run < ActiveRecord::Base
-  attr_accessible :date, :distance, :time
+  attr_accessible :date, :distance, :timeElapsed
 end

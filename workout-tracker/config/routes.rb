@@ -1,6 +1,9 @@
 WorkoutTracker::Application.routes.draw do
 
   resources :runs
+
+
+  resources :runs
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   

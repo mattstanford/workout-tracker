@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Date</th>
-    <th>Time</th>
+    <th>Timeelapsed</th>
     <th>Distance</th>
     <th></th>
     <th></th>
@@ -13,7 +13,7 @@
 <% @runs.each do |run| %>
   <tr>
     <td><%= run.date %></td>
-    <td><%= run.time %></td>
+    <td><%= run.timeElapsed %></td>
     <td><%= run.distance %></td>
     <td><%= link_to 'Show', run %></td>
     <td><%= link_to 'Edit', edit_run_path(run) %></td>
