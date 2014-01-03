@@ -25,6 +25,7 @@ class RunsController < ApplicationController
   # GET /runs/new.json
   def new
     @run = Run.new
+    @user_id = params[:user_id]
 
     respond_to do |format|
       format.html # new.html.erb
