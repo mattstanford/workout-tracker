@@ -11,10 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140103193313) do
+ActiveRecord::Schema.define(:version => 20140110053151) do
 
   create_table "runs", :force => true do |t|
-    t.datetime "date"
+    t.date     "date"
     t.integer  "timeElapsed"
     t.float    "distance"
     t.datetime "created_at",  :null => false
