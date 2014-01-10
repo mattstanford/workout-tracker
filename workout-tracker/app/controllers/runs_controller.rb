@@ -41,7 +41,9 @@ class RunsController < ApplicationController
   # POST /runs
   # POST /runs.json
   def create
-    @run = Run.new(params[:run])
+    @run = Run.new(params[:run]) 
+    
+    @run.user_id = self.current_user.id
 
     respond_to do |format|
       if @run.save
