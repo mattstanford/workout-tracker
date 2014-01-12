@@ -14,6 +14,12 @@
 		<div class='span8'>
 
 			<%= link_to 'Add Run', new_run_path(:user_id => @user.id), :class => "btn", :id => "btn-add-run" %>
+			
+			<ul id="recent-runs-list">
+				<% @run_feed.each do |run| %>
+					<li><%= link_to "On #{run.date} ran #{run.distance} in #{run.timeElapsed}", run_path(run.id), class: "list-group-item" %></li>
+				<% end %>
+			</ul>
 		</div>	
 
 	</div>
