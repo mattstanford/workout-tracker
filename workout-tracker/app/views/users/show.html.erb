@@ -1,11 +1,20 @@
 <% provide(:title, @user.name) %>
-<h1>
-  <%= gravatar_for @user %>
-  <%= @user.name %>
-</h1>
 
-<%= @user.email %>
+<div id='content' class='container-fluid'>
+	<div class='row-fluid'>
 
-<%= link_to 'Edit Profile', edit_user_path(@user)%>
+		<div class='span4'>
+			<p><%= gravatar_for @user %></p>
+			<p><%= @user.name %></p>
+			<p><%= @user.email %></p>
+			<br>
+			<p><%= link_to 'Edit Profile', edit_user_path(@user)%></p>
+		</div>
 
-<%= link_to 'Add Run', new_run_path(:user_id => @user.id) %>
+		<div class='span8'>
+
+			<%= link_to 'Add Run', new_run_path(:user_id => @user.id), :class => "btn" %>
+		</div>	
+
+	</div>
+</div>
