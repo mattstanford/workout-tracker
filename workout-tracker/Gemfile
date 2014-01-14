@@ -17,7 +17,7 @@ end
 
 gem 'sass-rails'
 gem 'uglifier'
-gem 'coffee-rails'
+#gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
@@ -28,6 +28,7 @@ gem 'bcrypt-ruby'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
+gem 'jquery-ui-rails'
 
 group :doc do
     gem 'sdoc', '0.3.20', require:false
