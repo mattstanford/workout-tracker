@@ -20,6 +20,7 @@
 					<li><%= link_to "On #{run.date} ran #{run.distance} in #{run.timeElapsed}", run_path(run.id), class: "list-group-item" %></li>
 				<% end %>
 			</ul>
+			<%= link_to 'All Runs...', runs_path %>
 		</div>	
 
 	</div>
