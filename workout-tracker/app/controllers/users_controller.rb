@@ -5,7 +5,9 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
-    @run_feed = Run.where(user_id: params[:id]).last(5)
+    
+    #Get the last 5 runs the user ran
+    @run_feed = Run.where(user_id: params[:id]).order('date DESC').first(5)
   end
   
   def create
